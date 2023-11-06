@@ -30,4 +30,7 @@ class CurrenciesCalculator(unittest.TestCase):
         with self.assertRaises(TypeError) as e:
             currenciesCalc('fds', 3)
         print(e.exception.args)
-
+    def test_wrongcode(self):
+        with self.assertRaises(KeyError) as e:
+            currenciesCalc(3, 'fdf')
+        print(e.exception.args)
