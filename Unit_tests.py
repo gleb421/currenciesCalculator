@@ -23,7 +23,11 @@ class CurrenciesCalculator(unittest.TestCase):
     def test_types(self):
         with self.assertRaises(TypeError) as e:
             currenciesCalc('3', 'USD')
+        print(e.exception.args)
         with self.assertRaises(TypeError) as e:
             currenciesCalc(2, 234)
+        print(e.exception.args)
         with self.assertRaises(TypeError) as e:
             currenciesCalc('fds', 3)
+        print(e.exception.args)
+
