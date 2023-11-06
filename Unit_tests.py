@@ -20,3 +20,10 @@ class CurrenciesCalculator(unittest.TestCase):
         self.assertEqual(res1, currenciesCalc(0, 'USD'))
         self.assertEqual(res2, currenciesCalc(0, 'EUR'))
         self.assertEqual(res3, currenciesCalc(0, 'CNY'))
+    def test_types(self):
+        with self.assertRaises(TypeError) as e:
+            currenciesCalc('3', 'USD')
+        with self.assertRaises(TypeError) as e:
+            currenciesCalc(2, 234)
+        with self.assertRaises(TypeError) as e:
+            currenciesCalc('fds', 3)
