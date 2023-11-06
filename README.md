@@ -45,7 +45,6 @@
 
 # История изменения проекта с хэшами коммитов
 commit e3def356710f892c6b0689b476ac0a7479f8fc4e (origin/UnitTests)
-Author: gleb421 <94608946+gleb421@users.noreply.github.com>
 Date:   Tue Nov 7 02:00:39 2023 +0300
 
     Были исправлены ошибки, связанные с ValueError
