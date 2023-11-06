@@ -23,5 +23,8 @@ print('Все коды валют:'
 
 
 def currenciesCalc(chislo, val):
-
+    if type(val) != str:
+        raise TypeError("val should be a word")
+    if type(chislo) not in [int, float]:
+        raise TypeError("chislo should be a number")
     return chislo * Constants.currenc[val]
