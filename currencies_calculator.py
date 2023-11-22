@@ -23,12 +23,12 @@ print('Все коды валют:'
 
 
 def currenciesCalc(chislo, val):
-      if all(sign != val for sign in Constants.currenc.keys()) and type(val) == str:
-        raise KeyError('No this code')
-      if type(val) != str:
-        raise TypeError("val should be a word")
-      if type(chislo) not in [int, float]:
-        raise TypeError("chislo should be a number")
-      if chislo < 0:
-        raise ValueError("chislo can't be negative")
+      # if all(sign != val for sign in Constants.currenc.keys()) and type(val) == str:
+      #   raise KeyError('No this code')
+      # if type(val) != str:
+      #   raise TypeError("val should be a word")
+      # if type(chislo) not in [int, float]:
+      #   raise TypeError("chislo should be a number")
+      # if chislo < 0:
+      #   raise ValueError("chislo can't be negative")
     return chislo * Constants.currenc[val]
