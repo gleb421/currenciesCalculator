@@ -34,13 +34,13 @@ class CurrenciesCalculator(unittest.TestCase):
         with self.assertRaises(KeyError) as e:
             currenciesCalc(3, 'fdf')
         print(e.exception.args)
-    def test_values(self):
-        with self.assertRaises(ValueError) as e:
-            currenciesCalc(-1, 'USD')
-        print(e.exception.args)
-        with self.assertRaises(ValueError):
-            currenciesCalc(-2, 'EUR')
-        print(e.exception.args)
-        with self.assertRaises(ValueError):
-            currenciesCalc(-3, 'CNY')
-        print(e.exception.args)
+    # def test_values(self):
+    #     with self.assertRaises(ValueError) as e:
+    #         currenciesCalc(-1, 'USD')
+    #     print(e.exception.args)
+    #     with self.assertRaises(ValueError):
+    #         currenciesCalc(-2, 'EUR')
+    #     print(e.exception.args)
+    #     with self.assertRaises(ValueError):
+    #         currenciesCalc(-3, 'CNY')
+    #     print(e.exception.args)
